@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Ação Necessária</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f5f7; font-family:Arial, Helvetica, sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f5f7; padding:30px 0;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+
+          <!-- Header: cor de alerta, tom diferente do institucional -->
+          <tr>
+            <td style="background-color:#c0392b; padding:20px 32px;">
+              <span style="color:#ffffff; font-size:18px; font-weight:bold;">
+                ⚠️ Departamento de Segurança
+              </span>
+            </td>
+          </tr>
+
+          <!-- Faixa de urgência -->
+          <tr>
+            <td style="background-color:#fdecea; padding:12px 32px; border-bottom:1px solid #f5c6c3;">
+              <span style="color:#c0392b; font-size:13px; font-weight:bold;">
+                AÇÃO NECESSÁRIA NAS PRÓXIMAS 24 HORAS
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px;">
+              <p style="color:#222222; font-size:15px; line-height:1.6; margin:0 0 16px;">
+                <strong>ATENÇÃO,</strong>
+              </p>
+              <p style="color:#222222; font-size:15px; line-height:1.6; margin:0 0 16px;">
+                Detetámos uma irregularidade na sua inscrição para o estudo de
+                Privacidade de Dados. Se não confirmar os seus dados nas próximas
+                <strong>24 horas</strong>, a sua participação será
+                <strong style="color:#c0392b;">CANCELADA</strong> automaticamente e
+                perderá o direito ao relatório final.
+              </p>
+              <p style="color:#222222; font-size:15px; line-height:1.6; margin:0 0 24px;">
+                Clique imediatamente no link abaixo para regularizar a situação:
+              </p>
+
+              <!-- Botão Principal (mantém tag do GoPhish para registar o clique) -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 20px auto;">
+                <tr>
+                  <td style="background-color:#c0392b; border-radius:6px; text-align:center;">
+                    <a href="{{.URL}}"
+                       style="display:inline-block; padding:14px 28px; color:#ffffff;
+                              text-decoration:none; font-size:15px; font-weight:bold;">
+                      CONFIRMAR AGORA
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- URL Explicito por Extenso (Phishing Óbvio / Urgência) -->
+              <p style="font-size:13px; color:#666666; text-align:center; margin:20px 0 24px 0; border-top:1px solid #eeeeee; padding-top:16px; line-height:1.5;">
+                Se o botão não funcionar, copie e cole o seguinte endereço no seu navegador:<br>
+                <span style="color:#c0392b; font-weight:bold; word-break:break-all;">https://nexodigitalweb.pt.urgente-verificacao.com/acesso</span>
+              </p>
+
+              <p style="color:#999999; font-size:13px; line-height:1.6; margin:0;">
+                Esta é uma mensagem automática, não é necessário responder.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f4f5f7; padding:16px 32px; border-top:1px solid #e5e5e5;">
+              <p style="color:#999999; font-size:11px; line-height:1.5; margin:0;">
+                Departamento de Segurança
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+{{.Tracker}}</body>
+</html>
